@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="jaya.jpeg">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<script type="text/javascript">
+  var image1 = new Image();
+  image1.src ="web2.webp";
+
+  var image2 = new Image();
+  image2.src ="web3.webp";
+
+  var image3 = new Image();
+  image3.src ="web6.jpeg";
+</script>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div  class="container-fluid">
+          <a class="navbar-brand" href="#">Jaya Bisht</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link " href= "#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Project</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li> 
+            </ul>
+          </div>  
+        </div>
+      </nav>
+
+    <!-- home  -->
+    <p id="home">
+      
+
+      <div class="slider" >
+        <img src="web5.avif" width="100%" height="650px" name="slide" width="100%" />
+        <script>
+            var step=1;
+            function slideit(){
+                if(!document.images)
+                return;
+                document.images.slide.src=eval("image"+step+".src");
+                if(step<3)
+                step++;
+            else
+            step=1;
+        setTimeout("slideit()",3000);
+            }
+            slideit();
+        </script>
+        </div>
+
+
+        <div class="row about" >
+          <div class="col-sm-12 p-3 bg-dark text-white">
+            <div class="about-container" data-aos="zoom-in">      
+              <h1>Hey! My name is Jaya Bisht.
+                I am a web & fontend developer
+                 </h1><br>
+                 I am a passionate MCA student at Manipal College with a strong foundation in web development. Currently, I am immersed in the <br> dynamic world of HTML, CSS and Javascript,wher I find joy in cfreating interactive interactive and visually appealing websites <br>
+                 My academic journey has equipped me with a solid foundation in key areas of Computer Science. <br><br><br>
+                 <div class="about-btn">
+                 <button type="button" class="btn btn-danger"><a href="Jaya bisht.pdf"> Resume</a></button>
+                 <button type="button" class="btn btn-danger" > <a href="#contact">Contact Me</a></button></div>
+            </div>
+          </div>
+          </div></p>
+
+<!-- about  -->
+<p id="about">
+  <div class="aboutMe"  data-aos="fade-up">
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-sm-7 p-3  text-white">
+<!-- <img src="web7.gif" height="600px" width="800px"> -->
+</div>
+<div class="col-sm-5 p-3  text-white " >
+  <div class="about-contant" data-aos="fade-up">
+    <h1>About Me</h1><br>
+    I am a passionate MCA student at Manipal College with a strong foundation in web development. Currently, I am immersed in the <br> dynamic world of HTML, CSS and Javascript,wher I find joy in cfreating interactive interactive and visually appealing websites <br>
+    My academic journey has equipped me with a solid foundation in key areas of Computer Science. <br><br>
+  
+  <div class="about-link">
+    <div class="skill-tag"><a href="#">Skills</a></div>
+    <div class="certificate-tag"><a href="#">Certificate</a></div>
+   <div class="education-tag"><a href="#">Education</a> </div></div>
+    <br> <br>
+    <div class="about-menu">
+    <div class="skill">HTML <br>Javascript <br> CSS <br>SQL <br>C Program</div>
+  
+  <div class="certificate">
+    <button type="button" class="btn btn-primary">
+    <a href="https://www.hackerrank.com/certificates/aaf7e2844606">SQL(intermediate)</a></button>
+    <button type="button" class="btn btn-primary">
+      <a href="https://www.coursera.org/account/accomplishments/records/A3DQL6VELBVK">Programming with javaScript</a></button> <br> <br>
+      <button type="button" class="btn btn-primary">
+        <a href="https://coursera.org/share/87b7793c75d3a405e7c28a6871ee92e1">Introduction to Generative AI</a></button>
+        <button type="button" class="btn btn-primary">
+          <a href="https://www.hackerrank.com/certificates/aaf7e2844606">Introduction to git & github </a></button>
+  </div>
+<div class="education">
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>COURSE</th>
+        <th>UNIVERSITY</th>
+        <th>GRADE</th>
+        <th>YEAR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MCA</td>
+        <td>Manipal University, Jaipur</td>
+        <td>pursing</td>
+        <td>2023-2025</td>
+      </tr>
+      <tr>
+        <td>B.sc</td>
+        <td>Sobin Singh Jeena University, Almora	</td>
+        <td>79%</td>
+        <td>2020-2023</td>
+      </tr>
+      <tr>
+        <td>12 <sup>th</sup> (C.B.S.E)</td>
+        <td>The Asian Academy Sen. Sec. School, Pithoragarh	</td>
+        <td>79.3</td>
+        <td>2018-2019</td>
+      </tr>
+      <td>10 <sup>th</sup> (C.B.S.E)</td>
+        <td>The Asian Academy Sen. Sec. School, Pithoragarh	</td>
+        <td>9.5 CGPA</td>
+        <td>2016-2017</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </div></div>
+</div></div>
+<script>
+     $(document).ready(function(){
+    $(".skill-tag").hover(function(){
+        $(".skill").show("slow");
+
+    })
+}); 
+
+$(document).ready(function(){
+    $(".skill-tag").hover(function(){
+        $(".certificate,.education").hide()
+    })
+}); 
+
+
+
+$(document).ready(function(){
+    $(".certificate-tag").hover(function(){
+        $(".skill,.education").hide()
+    })
+}); 
+$(document).ready(function(){
+    $(".certificate-tag").hover(function(){
+        $(".certificate").show("slow")
+    })
+}); 
+
+
+$(document).ready(function(){
+    $(".education-tag").hover(function(){
+        $(".skill,.certificate").hide()
+    })
+}); 
+
+$(document).ready(function(){
+    $(".education-tag").hover(function(){
+        $(".education").show("slow")
+    })
+}); 
+</script></div></div></p>
+
+<!-- project  -->
+<p id="project">
+  <div class="project"  data-aos="fade-up">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 p-3  text-white ">
+<h1>My project</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 p-3 text-white ">
+      <div class="card" style="width:100% "  data-aos="fade-right">
+        <img class="card-img-top" src="sportifyImg.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Sportify clone </h4>
+          <p class="card-text">This is the colne of sportify which is made by the help of  HTML and Css. </p>
+          <a href="sportify/project.html" class="btn btn-primary">View Project</a>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-3 p-3  text-white ">
+    <div class="card" style="width:100% " data-aos="fade-up" >
+      <img class="card-img-top" src="amazoneImg.png" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Amazon clone </h4>
+        <p class="card-text">This is a clone simple clone of Amazon which is made of HTML and CSS</p>
+        <a href="amazone/index.html" class="btn btn-primary">View Project</a>
+      </div>
+  </div>
+</div>
+<div class="col-sm-3 p-3  text-white " data-aos="fade-up">
+  <div class="card" style="width:100% " >
+    <img class="card-img-top" src="filterImg.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Filter in Image(mini project)</h4>
+      <p class="card-text">A Mini project help to use the filter on picture and is made by the use of HTML,CSS, JS </p>
+      <a href="filterOnImg.html" class="btn btn-primary">View Project</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-3 p-3 text-white " data-aos="fade-left">
+  <div class="card" style="width:100% " >
+    <img class="card-img-top" src="giftMeImg.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">send me gift(mini project) </h4>
+      <p class="card-text">This is a fun mini project for giving me appriciation gift according to my project. </p>
+      <a href="giftMe.html" class="btn btn-primary">View Project</a>
+    </div>
+</div>
+</div>
+</div>
+  
+</div>
+</p>
+
+<!-- contact -->
+<p id="contact">
+<div class="contact"  data-aos="fade-right">
+<div class="container mt-3"  data-aos="fade-up">
+  <div class="row">
+<div class="col-sm-6 p-3 text-white  bg-dark " data-aos="fade-up">
+<h1>Contact Me</h1>
+
+
+<div class="col-sm-6 p-3 text-white  bg-dark">
+  <i class="fa-solid fa-envelope"></i> 
+jayabisht832@gmail.com <br>
+
+<div class="icon">
+<a href="https://www.instagram.com/jayabisht_7/"><i class="fa-brands fa-instagram"></i></a>
+<a href=""><i class="fa-brands fa-linkedin"></i></a>
+<a href=""><i class="fa-brands fa-github"></i></a>
+</div>
+
+</div>
+<div class="col-sm-6 p-3 text-white  bg-dark ">
+  <i class="fa-solid fa-phone"></i>
+  +91 6399704944
+  </div>
+  
+</div>
+<div class="col-sm-6 p-3 text-white bg-dark "  data-aos="fade-left">
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="mb-3 mt-3">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+  <textarea name="message" id="message" placeholder="Message" class="form-control" cols="80" rows="10"></textarea><br>
+    
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+  </div>
+</div>
+</p>
+
+<!-- footer  -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12 p-3 text-white bg-dark ">
+  By jayaBisht &copy; 2024 
+</div>
+</div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="index.js"></script>
+</body>
+</html>

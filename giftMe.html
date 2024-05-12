@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        *{
+            background-color: pink;
+        }
+        .please{
+            margin-left: 530px;
+        }
+        .qs{
+            color: blue;
+            /* margin-top: 200px; */
+            font-size: 30px;
+            font-family: helvetica;
+            margin-left: 500px;
+
+        }
+        .yes{
+            height: 50px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 30%;
+            font-size: 20px;
+            color: white;
+            margin-left: 520px;
+
+        }
+        .no{
+            height: 50px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 30%;
+            font-size: 20px;
+            color: white; 
+            margin-left: 150px;
+        }
+        .gift img{
+            height: 200px;
+            width: 200px;
+            
+        }
+        .gift{
+            margin-left:600px;
+            display: none;
+            color: blue;
+            font-size: 30px;
+        }
+        .yes:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <img src="please.gif" class="please">
+    <div class="qs"> <b> Can you send me money?</b></div><br>
+    <button class="yes">YES</button> 
+    <button class="no">NO</button>
+    <div class="gift"> <img src="thanku4.gif" alt=""> <br><img src="scan.jpg"> </div>
+
+    <script>
+        $(document).ready(function(){
+    $(".no").hover(function(){
+        $(".no").slideDown()
+    })
+}); 
+
+$(document).ready(function(){
+    $(".no").hover(function(){
+        $(".no").css('margin-left',"500px")
+    })
+}); 
+$(document).ready(function(){
+    $(".no").hover(function(){
+        $(".no").hide()
+    })
+}); 
+
+
+
+$(document).ready(function(){
+    $(".yes").click(function(){
+        $(".gift").show()
+    })
+}); 
+$(document).ready(function(){
+    $(".yes").click(function(){
+        $(".please").hide()
+    })
+}); 
+$(document).ready(function(){
+    $(".yes").click(function(){
+        $(".qs").hide()
+    })
+}); 
+$(document).ready(function(){
+    $(".yes").click(function(){
+        $("button").hide()
+    })
+}); 
+    </script>
+</body>
+</html>

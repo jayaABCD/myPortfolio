@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+  }
+  a{
+
+    text-decoration: none;
+    color: white;
+  }
+.slider{
+    margin-top: 55px;
+    z-index: -1;
+}
+.about{
+ font-size: 20px;
+ margin-top: -650px;
+ opacity: 0.8;
+ transition: 3s;
+ height: 650px;
+
+
+}
+.row{
+  overflow: hidden;
+}
+.aboutMe{
+    background-image: url(web8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-collapse li{
+  margin-left: 40px;
+}
+.navbar-collapse li:hover,
+.navbar-collapse a.active{
+font-size: 15px;
+font-weight: bold;
+border-bottom: 2px solid  red;
+}
+
+.about-container,
+.about-contant{
+  height: 800px;
+  width: 100%;
+  padding: 80px 90px 50px;
+}
+.about-btn  { 
+  margin-left: 10%;
+  padding: 80px  20px 20px;
+
+}
+.btn{
+  margin-left: 10%;
+  width: 150px;
+}
+.about-link a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px 20px 20px;
+
+}
+.about-link{
+  display: flex;
+}
+
+.about-link a:hover{
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+.skill,.education,.certificate{
+  display: none;
+  transition: 3ms;
+}
+.certificate a{
+  text-decoration: none;
+  color: white;
+}
+.project{
+  text-align: center;
+}
+.form-control{
+  background-color: grey;
+  border: none;
+  color: white;
+}
+
+.card{
+  transform: 5s;
+}
+.card:hover{
+ transform: scale(1.1);
+}
+.icon i{
+ margin-left: 10px;
+ margin-top: 20px;
+ font-size: 20px;
+ transition: 0.5s;
+}
+.icon i:hover{
+ font-size: 23px;
+ color: rgb(241, 32, 119 );
+}

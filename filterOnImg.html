@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".blur").click(function(){
+                $("img").css("filter","blur(5px)");
+            });
+            $(".default").click(function(){
+                $("img").css("filter","none");
+            });
+            $(".brightness").click(function(){
+                $("img").css("filter","brightness(200%)");
+            });
+            $(".contrast").click(function(){
+                $("img").css("filter","contrast(200%)");
+            });
+            $(".drop-shadow").click(function(){
+                $("img").css("filter","drop-shadow(8px 8px 10px aqua)");
+            });
+            $(".grayscale").click(function(){
+                $("img").css("filter","grayscale(100%)");
+            });
+            $(".invert").click(function(){
+                $("img").css("filter","invert(100%)");
+            });
+            $(".saturation").click(function(){
+                $("img").css("filter","saturate(3)");
+            });
+        });
+    </script>
+    <style>
+        *{
+            background-color: black;
+        }
+        img{
+          margin-left: 500px;
+
+        }
+        .option{
+          margin-left: 600px;          
+        }
+        button{
+            height: 30px;
+            width: 200px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: 1s;
+        }
+        button:hover{
+            filter:drop-shadow(5px 5px 10px grey);
+            background-color: skyblue;
+            color: black;
+            border-radius: 50%;
+            background: linear-gradient(green,yellow);
+        }
+        .head{
+            color:red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin-left: 100px;
+            animation: color 7s;
+            animation-iteration-count: infinite;
+            font-size: 50px;
+        }
+        @keyframes color{
+25%{color:fuchsia }
+50%{color:green}
+75%{color: blue}
+100%{color:yellow}
+
+}
+    </style>
+</head>
+<body>
+  <div class="img">  <img src="bird.jpg" alt=""> 
+    <div class="head"><b>FILTER</b> </div>
+<div class="option">
+    <button class="blur">blur</button>
+    <button class="brightness">brightness</button><br>
+    <button class="contrast">contrast</button>
+    <button class="drop-shadow">drop-shadow</button><br>
+    <button class="grayscale">grayscale</button>
+    <button class="invert">invert</button><br>
+    <button class="saturation">saturation</button> 
+    <button class="default">None</button>
+
+</div>
+</div>
+</body>
+</html>
